@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="38"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-09 05:40:29 &#214;S"/>
+        <attribute name="created" value="Mzg7IFBDMzg7IDIwMTktMTAtMDk7IDEwOjQ4OjU0IDsgMTU4OA=="/>
+        <attribute name="edited" value="Mzg7IFBDMzg7IDIwMTktMTAtMDk7IDExOjU3OjIzIDsgMTU4NQ=="/>
+        <attribute name="edited" value="bWV0aW47U0FLOzIwMTktMTAtMDk7MDU6NDA6Mjkgw5ZTOzU7MjMwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="String" array="False" size=""/>
+            <declare name="rasgele, sayi, sayac, b" type="Integer" array="False" size=""/>
+            <assign variable="rasgele" expression="random(99)+1"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="sayi" expression="0"/>
+            <assign variable="sayac" expression="0"/>
+            <output expression="&quot;Ba&#351;lamak i&#231;in ENTER'a bas&#305;n&#305;z&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Bilgi: (5) hakk&#305;n&#305;z bulunmaktad&#305;r&quot;" newline="True"/>
+            <output expression="&quot;Bilgi: Say&#305; (0) ile (100) aras&#305;ndad&#305;r.&quot;" newline="True"/>
+            <output expression="&quot;Bir say&#305; girin&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <do expression="rasgele!=sayi">
+                <if expression="sayi&lt;rasgele">
+                    <then>
+                        <if expression="sayac=4">
+                            <then/>
+                            <else>
+                                <output expression="&quot;Daha b&#252;y&#252;k bir say&#305; gir.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="sayi=rasgele">
+                            <then/>
+                            <else>
+                                <if expression="sayac=4">
+                                    <then/>
+                                    <else>
+                                        <output expression="&quot;Daha k&#252;&#231;&#252;k bir say&#305; gir.&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+                <if expression="sayac=5">
+                    <then/>
+                    <else>
+                        <if expression="sayi=rasgele">
+                            <then/>
+                            <else>
+                                <input variable="sayi"/>
+                                <if expression="sayi=rasgele">
+                                    <then>
+                                        <assign variable="sayac" expression="sayac+1"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="sayac=5">
+                    <then>
+                        <if expression="rasgele=sayi">
+                            <then>
+                                <assign variable="b" expression="-1"/>
+                            </then>
+                            <else>
+                                <assign variable="rasgele" expression="sayi"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <if expression="b!=-1">
+                <then>
+                    <if expression="sayac&lt;5">
+                        <then>
+                            <output expression="&quot;Tebrikler &quot;&amp;sayac&amp;&quot;. seferde kazand&#305;n&#305;z.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Kaybettiniz.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Tebrikler &quot;&amp;sayac&amp;&quot;. seferde kazand&#305;n&#305;z.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

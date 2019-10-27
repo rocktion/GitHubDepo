@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="metin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-20 08:50:08 &#214;S"/>
+        <attribute name="created" value="bWV0aW47U0FLOzIwMTktMTAtMTc7MDQ6MzA6NDIgw5ZTOzIxODI="/>
+        <attribute name="edited" value="bWV0aW47U0FLOzIwMTktMTAtMjA7MDg6NTA6MDggw5ZTOzI7MjI5Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x1, x2, disk" type="Real" array="False" size=""/>
+            <assign variable="x1" expression="0"/>
+            <assign variable="x2" expression="0"/>
+            <output expression="&quot;ax^2+bx+c &#351;eklindeki bir denklemin k&#246;klerini bulaca&#287;&#305;z.&quot;" newline="True"/>
+            <output expression="&quot;a?&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b?&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;c?&quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;Denklem: &quot;&amp;a&amp;&quot;x^2+&quot;&amp;b&amp;&quot;x+&quot;&amp;c&amp;&quot;=0&quot;" newline="True"/>
+            <assign variable="disk" expression="b^2-(4*a*c)"/>
+            <if expression="disk&gt;0">
+                <then>
+                    <assign variable="x1" expression="(-b+(disk)^(1/2))/(2*a)"/>
+                    <assign variable="x2" expression="(-b-(disk)^(1/2))/(2*a)"/>
+                    <output expression="&quot;x1=&quot;&amp;x1" newline="True"/>
+                    <output expression="&quot;x2=&quot;&amp;x2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="disk=0">
+                        <then>
+                            <assign variable="x1" expression="-b/(2*a)"/>
+                            <assign variable="x2" expression="x1"/>
+                            <output expression="&quot;x1 ve x2 birbirine e&#351;ittir ve &quot;&amp;x1&amp;&quot;' dir.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Denklemin reel k&#246;k&#252; yoktur.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

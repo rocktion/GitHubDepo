@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="metin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 11:15:48 &#214;S"/>
+        <attribute name="created" value="bWV0aW47U0FLOzIwMTktMTAtMTU7MDk6Mjk6MzYgw5ZTOzIxOTY="/>
+        <attribute name="edited" value="bWV0aW47U0FLOzIwMTktMTAtMTU7MTE6MTU6NDggw5ZTOzE7MjI5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="String" array="False" size=""/>
+            <assign variable="a" expression="&quot;lolipop&quot;"/>
+            <declare name="bas1, bas2, bas3, sayi" type="Integer" array="False" size=""/>
+            <assign variable="bas1" expression="0"/>
+            <assign variable="bas2" expression="0"/>
+            <assign variable="bas3" expression="0"/>
+            <output expression="&quot;&#220;&#231; basamakl&#305; pozitif bir say&#305; giriniz.&quot;" newline="True"/>
+            <output expression="&quot;Basamaklar toplanacak.&quot;" newline="True"/>
+            <do expression="a!=&quot;merhababenimadimname&quot;">
+                <do expression="bas1!=3">
+                    <input variable="sayi"/>
+                    <if expression="sayi&gt;99">
+                        <then>
+                            <if expression="sayi&lt;1000">
+                                <then>
+                                    <assign variable="bas1" expression="3"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;&#220;&#231; basamakl&#305; girmeniz konusunda &#305;srar ediyorum.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#220;&#231; basamakl&#305; girmeniz konusunda &#305;srar ediyorum.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </do>
+                <assign variable="bas1" expression="sayi/100"/>
+                <assign variable="bas2" expression="sayi/10%10"/>
+                <assign variable="bas3" expression="sayi%10"/>
+                <assign variable="sayi" expression="bas1+bas2+bas3"/>
+                <output expression="&quot;Basamaklar&#305;n toplam&#305;=&quot;&amp;sayi" newline="True"/>
+                <output expression="&quot;oyundan &#231;&#305;kmak i&#231;in ''merhababenimadimname'' yaz&quot;" newline="True"/>
+                <output expression="&quot;Devam etmek i&#231;in ''ENTER'' a bas&#305;n&#305;z.&quot;" newline="True"/>
+                <input variable="a"/>
+                <if expression="a!=&quot;merhababenimadimname&quot;">
+                    <then>
+                        <output expression="&quot;&#220;&#231; basamakl&#305; pozitif bir say&#305; giriniz.&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot;La Seni Bravo LAAA&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

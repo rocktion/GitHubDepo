@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="metin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-08 09:05:03 &#214;S"/>
+        <attribute name="created" value="bWV0aW47U0FLOzIwMTktMTAtMDQ7MTI6NTM6MDIgw5bDljsyMzA5"/>
+        <attribute name="edited" value="bWV0aW47U0FLOzIwMTktMTAtMDg7MDk6MDU6MDMgw5ZTOzM7MjI5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir de&#287;er giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Bir de&#287;er daha giriniz.&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&lt;b">
+                <then>
+                    <output expression="b" newline="True"/>
+                    <output expression="&quot;B&#252;y&#252;kt&#252;r&quot;" newline="True"/>
+                    <assign variable="a" expression="999"/>
+                </then>
+                <else>
+                    <if expression="a&gt;b">
+                        <then>
+                            <output expression="a" newline="True"/>
+                            <output expression="&quot;B&#252;y&#252;kt&#252;r&quot;" newline="True"/>
+                            <assign variable="b" expression="999"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Girdi&#287;iniz de&#287;erler birbirine e&#351;ittir&quot;" newline="True"/>
+                            <output expression="&quot;Edit: Am&#305;nakodumun sipasti&#287;i seni&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="b&lt;100">
+                <then>
+                    <output expression="b&amp;&quot; Ayn&#305; zamanda 100'den k&#252;&#231;&#252;kt&#252;r &quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="a&lt;100">
+                <then>
+                    <output expression="a&amp;&quot; Ayn&#305; zamanda 100'den k&#252;&#231;&#252;kt&#252;r &quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <comment text="salam&#305;n akkum"/>
+        </body>
+    </function>
+</flowgorithm>

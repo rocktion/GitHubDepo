@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="metin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-20 08:32:19 &#214;S"/>
+        <attribute name="created" value="bWV0aW47U0FLOzIwMTktMTAtMjA7MDc6Mzk6MTggw5ZTOzIxOTE="/>
+        <attribute name="edited" value="bWV0aW47U0FLOzIwMTktMTAtMjA7MDg6MzI6MTkgw5ZTOzE7MjI5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c" type="String" array="False" size=""/>
+            <assign variable="c" expression="&quot;a&quot;"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <do expression="c!=&quot;a&quot;">
+                <do expression="(a&gt;b)||(a=b)">
+                    <output expression="&quot;a say&#305;s&#305; b say&#305;s&#305;na *E&#350;&#304;T veya B&#220;Y&#220;K OLAMAZ*&quot;" newline="True"/>
+                    <output expression="&quot;a say&#305;s&#305;n&#305; gir&quot;" newline="True"/>
+                    <input variable="a"/>
+                    <output expression="&quot;b say&#305;s&#305;n&#305; gir&quot;" newline="True"/>
+                    <input variable="b"/>
+                </do>
+                <if expression="(a%2==0)">
+                    <then>
+                        <if expression="b%2==0">
+                            <then>
+                                <output expression="&quot;Girdi&#287;in &#231;ift say&#305;lar&#305;n toplam&#305;=&quot;&amp;a+b" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Girdi&#287;in &#231;ift say&#305;lar&#305;n toplam&#305;=&quot;&amp;a" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="b%2==0">
+                            <then>
+                                <output expression="&quot;Girdi&#287;in &#231;ift say&#305;lar&#305;n toplam&#305;=&quot;&amp;b" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Girdi&#287;in &#231;ift say&#305;lar&#305;n toplam&#305;=&quot;&amp;0" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;if you wanna try again, press 'enter' please. Or press 'a' than 'enter' for out from app&quot;" newline="True"/>
+                <input variable="c"/>
+            </do>
+            <output expression="&quot;GoodBye&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

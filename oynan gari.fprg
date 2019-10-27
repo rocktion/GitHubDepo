@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="metin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-09 05:44:05 &#214;S"/>
+        <attribute name="created" value="bWV0aW47U0FLOzIwMTktMTAtMDg7MDg6MzI6MjIgw5ZTOzIxODY="/>
+        <attribute name="edited" value="bWV0aW47U0FLOzIwMTktMTAtMDk7MDU6NDQ6MDUgw5ZTOzY7MjMwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b" type="String" array="False" size=""/>
+            <output expression="&quot;B&#304;LGEL&#304;K SINAMA S&#304;MALAT&#214;R&#220;NE HO&#350;GELD&#304;N&#304;Z...&quot;" newline="True"/>
+            <output expression="&quot;Press enter to get started :)&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="sayi, rasgele, sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <assign variable="rasgele" expression="random(99)+1"/>
+            <assign variable="sayac" expression="1"/>
+            <output expression="&quot;Karde&#351;im tatava yapma bir say&#305; gir oyun oynuyoz burda&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="rasgele!=sayi">
+                <if expression="rasgele&lt;sayi">
+                    <then>
+                        <output expression="&quot;Az a&#351;a in&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Az &#231;&#305;k bakam&quot;" newline="True"/>
+                    </else>
+                </if>
+                <input variable="sayi"/>
+                <assign variable="sayac" expression="sayac+1"/>
+                <if expression="sayac=5">
+                    <then>
+                        <declare name="a" type="String" array="False" size=""/>
+                        <output expression="&quot;Press enter to get started for &#304;pucu&quot;" newline="True"/>
+                        <input variable="a"/>
+                        <output expression="&quot;Say&#305; 0 ile 100 aras&#305;nda&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;Tam olarak anlamad&#305;n galiba d&#252;nyal&#305; dostum KAZANDINIZ.&quot;" newline="True"/>
+            <output expression="sayac&amp;&quot;.Seferde ba&#351;ard&#305;n.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

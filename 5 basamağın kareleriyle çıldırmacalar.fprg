@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="38"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-16 11:59:58 "/>
+        <attribute name="created" value="Mzg7IFBDMzg7IDIwMTktMTAtMTY7IDExOjAwOjQwIDsgMTU3MA=="/>
+        <attribute name="edited" value="Mzg7IFBDMzg7IDIwMTktMTAtMTY7IDExOjU5OjU4IDsgMTU5Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bas1, bas2, bas3, bas4, bas5, sayi" type="Integer" array="False" size=""/>
+            <assign variable="bas1" expression="0"/>
+            <assign variable="bas2" expression="0"/>
+            <assign variable="bas3" expression="0"/>
+            <assign variable="bas4" expression="0"/>
+            <assign variable="bas5" expression="0"/>
+            <output expression="&quot;Be&#351; basamakl&#305; pozitif bir say&#305; giriniz.&quot;"/>
+            <do expression="bas1!=3">
+                <input variable="sayi"/>
+                <if expression="sayi&gt;9999">
+                    <then>
+                        <if expression="sayi&lt;100000">
+                            <then>
+                                <assign variable="bas1" expression="3"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;&#199;ok Y&#252;ksek say&#305;lar giriyorsun. L&#252;tfen 5 basamakl&#305; giriniz.&quot;"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="sayi&lt;0">
+                            <then>
+                                <output expression="&quot;L&#252;tfen pozitif say&#305; giriniz.&quot;"/>
+                            </then>
+                            <else>
+                                <if expression="Len(ToString(sayi))=4">
+                                    <then>
+                                        <output expression="&quot;4 Basamakl&#305; say&#305; girdiniz.&quot;"/>
+                                        <output expression="&quot;Be&#351; basamakl&#305; say&#305; girmenizi istirham ediyorum.&quot;"/>
+                                    </then>
+                                    <else>
+                                        <if expression="Len(ToString(sayi))=2">
+                                            <then>
+                                                <output expression="&quot;2 Basamakl&#305; say&#305; girdiniz.&quot;"/>
+                                                <output expression="&quot;Be&#351; basamakl&#305; say&#305; girmenizi istirham ediyorum.&quot;"/>
+                                            </then>
+                                            <else>
+                                                <if expression="Len(ToString(sayi))&lt;2">
+                                                    <then>
+                                                        <output expression="&quot;1 Basamakl&#305; say&#305; girdiniz.&quot;"/>
+                                                        <output expression="&quot;Be&#351; basamakl&#305; say&#305; girmenizi istirham ediyorum.&quot;"/>
+                                                    </then>
+                                                    <else>
+                                                        <output expression="&quot;3 Basamakl&#305; say&#305; girdiniz.&quot;"/>
+                                                        <output expression="&quot;Be&#351; basamakl&#305; say&#305; girmenizi istirham ediyorum.&quot;"/>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+            <assign variable="bas1" expression="sayi/10000"/>
+            <assign variable="bas2" expression="sayi/1000%10"/>
+            <assign variable="bas3" expression="sayi/100%10"/>
+            <assign variable="bas4" expression="sayi/10%10"/>
+            <assign variable="bas5" expression="sayi%10"/>
+            <assign variable="sayi" expression="bas1^2+bas2^2+bas3^2+bas4^2+bas5^2"/>
+            <output expression="&quot;Girdi&#287;iniz say&#305;n&#305;n basamaklar&#305;n&#305;n karelerinin toplam&#305;=&quot;&amp; sayi"/>
+        </body>
+    </function>
+</flowgorithm>
